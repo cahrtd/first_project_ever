@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Music Preferences Survey</title>
+  </head>
+  <body>
+    <div class="form-container">
+    <form method="post" id="survey-form">
+    <h1 id="title">🎧 Music Preferences Survey</h1>
+    <p id="description"><b>Tell us more about your music taste! </b></p>
+    <p id="description2">Your answers will help us create a better listening experience for everyone!</p>
+
+        <fieldset>
+          <label for="name" id="name-label">What’s your name?
+            <input 
+            type="text" 
+            id="name" 
+            placeholder="Your full name" 
+            required 
+            />
+          </label>
+
+          <label for="email" id="email-label">What’s the best email to reach you at (if needed)?
+            <input 
+            type="email" 
+            id="email" 
+            placeholder="example@email.com" 
+            required 
+            />
+          </label>
+
+          <label for="number" id="number-label">How old are you? (optional)
+            <input 
+            type="number" 
+            id="number" 
+            placeholder="Enter your age" 
+            min="14" 
+            max="120" 
+            required 
+            />
+          </label>
+        </fieldset>
+      
+      <div class="option-row">      
+        <fieldset>
+            <h4>How do you usually listen to music?</h4>
+            <label for="streaming">
+              <input 
+              type="radio" 
+              name="platform" 
+              value="streaming" 
+              id="streaming" 
+              /> Streaming (Spotify, Apple Music, etc.)
+            </label>
+            <label for="radio">
+              <input 
+              type="radio" 
+              name="platform" 
+              value="radio" 
+              id="radio" 
+              /> Radio / FM
+            </label>
+            <label for="vinyl">
+              <input 
+              type="radio" 
+              name="platform" 
+              value="vinyl" 
+              id="vinyl" 
+              /> Vinyl or CD
+            </label>
+           <label for="downloads">
+              <input 
+              type="radio" 
+              name="platform" 
+              value="downloads" 
+              id="downloads" 
+              /> Downloaded MP3s
+            </label>
+        </fieldset>
+      </div>
+
+        <fieldset>
+          <h4>When do you listen to music the most?</h4>
+            <select name="listening-time" id="dropdown">
+              <option value="">--Select one--</option>
+              <option value="morning">Morning</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+              <option value="night">Late at night</option>
+              <option value="all-day">All day</option>
+            </select>
+        </fieldset>
+
+      <div class="option-row">
+        <fieldset>
+          <h4>What do you use music for?</h4>
+            <label for="workout">
+                <input 
+                type="checkbox" 
+                name="usage" 
+                value="workout" 
+                id="workout" 
+                /> Working out
+            </label>
+            <label for="study">
+                <input 
+                type="checkbox" 
+                name="usage" 
+                value="study" 
+                id="study" 
+                /> Studying / Focusing
+            </label>
+            <label for="relax">
+                <input 
+                type="checkbox" 
+                name="usage" 
+                value="relax" 
+                id="relax" 
+                /> Relaxing
+            </label>
+            <label for="commute">
+                <input 
+                type="checkbox" 
+                name="usage" 
+                value="commute" 
+                id="commute" 
+                /> Commuting / Traveling
+            </label>
+            <label for="cleaning">
+                <input 
+                type="checkbox" 
+                name="usage" 
+                value="cleaning" 
+                id="cleaning" 
+                /> Cleaning / Organizing
+            </label>
+            <label for="crying">
+                <input 
+                type="checkbox" 
+                name="usage" 
+                value="crying" 
+                id="crying" 
+                /> Crying in the shower (no shame)
+            </label>
+            <label for="everything">
+                <input 
+                type="checkbox" 
+                name="usage" 
+                value="everything" 
+                id="everything" 
+                /> All of the above
+            </label>
+        </fieldset>
+      </div>
+
+        <fieldset>
+          <h4>Final Notes or a Song You Think Everyone Should Hear?</h4>
+            <textarea placeholder="Write freely here..." rows="5" cols="30"></textarea>
+        </fieldset> 
+
+        <fieldset>
+          <label for="terms-and-conditions">
+            <input 
+            class="inline" 
+            id="terms-and-conditions" 
+            value="terms-and-conditions" 
+            type="checkbox" 
+            name="terms-and-conditions" 
+            required 
+            /> I accept the <a target="_blank" href="terms.html">terms and conditions</a>
+          </label>
+        </fieldset> 
+
+      <input 
+      type="submit" 
+      value="Submit" 
+      id="submit" 
+      />
+    </form>
+    </div>
+  </body>
+
+</html>
